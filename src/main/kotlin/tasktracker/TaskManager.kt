@@ -70,4 +70,17 @@ object TaskManager {
         tasks[input - 1] = updatedTask
         println("Updated task using data class copy:\n$updatedTask\n")
     }
+
+    fun removeTask() {
+        listTasks()
+        if (tasks.isEmpty()) return
+        print("Enter task number to remove: ")
+        val input = readlnOrNull()?.toIntOrNull()
+        if (input == null || input !in 1..tasks.size) {
+            println("Invalid selection.\n")
+            return
+        }
+        tasks.removeAt(input - 1)
+        println("Task removed.\n")
+    }
 }

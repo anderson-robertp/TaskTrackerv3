@@ -19,7 +19,8 @@ object TaskApp {
                 "2" -> TaskManager.listTasks()
                 "3" -> TaskManager.markTaskComplete()
                 "4" -> TaskManager.updateTask()
-                "5" -> running = false
+                "5" -> TaskManager.removeTask()
+                "6" -> running = false
                 else -> println("Invalid option, please try again.\n")
             }
         }
@@ -34,8 +35,9 @@ object TaskApp {
             1. Add Task
             2. List Tasks
             3. Complete Task
-            4. Update Task (Data Class Demo)
-            5. Exit
+            4. Update Task
+            5. Remove Task
+            6. Exit
         """.trimIndent()
         )
         print("Select an option: ")
