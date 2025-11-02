@@ -1,7 +1,7 @@
 # Overview
 
 The goal of this project is to strengthen my understanding of Kotlin as a modern, concise, and expressive programming language for building console and desktop applications.
-I wanted to explore how Kotlin handles object-oriented design, collections, and data classes, while practicing clean code organization and modular structure.
+I wanted to explore how Kotlin handles object-oriented design, collections, and data classes while practicing clean code organization and modular structure.
 
 This program is a simple **Task Tracker** that allows users to create, list, complete, and update their tasks. It demonstrates several core Kotlin features including data classes, mutable lists, object declarations, and control flow using the `when` expression.
 By integrating an update feature that uses the `copy()` method from Kotlin data classes, the program also highlights how Kotlin simplifies immutability and state management.
