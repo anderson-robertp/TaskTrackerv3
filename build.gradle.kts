@@ -1,6 +1,6 @@
 plugins {
     kotlin("jvm") version "2.2.20"
-    id("application")
+    application
 }
 
 group = "org.example"
@@ -11,16 +11,14 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("stdlib"))
+    implementation(kotlin("stdlib"))
+    testImplementation(kotlin("test"))
 }
 
-tasks.test {
-    useJUnitPlatform()
-}
 kotlin {
     jvmToolchain(17)
 }
 
 application {
-    mainClass.set("TaskApp.kt")
+    mainClass.set("tasktracker.TaskAppKt")
 }
