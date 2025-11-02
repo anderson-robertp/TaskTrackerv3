@@ -60,8 +60,9 @@ The program structure follows a clean separation of concerns, splitting function
    git clone https://github.com/yourusername/TaskTracker.git
    cd TaskTracker
 2. Run the application with Gradle
+   ```bash
    ./gradlew run
-   gradlew.bat run
+    gradlew.bat run
 3. Interact with the program
  - Add new tasks
  - View the list of tasks
